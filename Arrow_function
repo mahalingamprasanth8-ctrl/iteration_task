@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        function addaditional(a,b){
+            return a+b;
+        }
+        console.log("traditionl function: 5+3=",addaditional(5,3));
+        document.getElementById("demo").innerHTML=addaditional(5,3);
+
+        const  addarrow = (a,b) => a*b;
+        console.log("arrow fuction: 5+3=",addarrow(5,3));
+        
+        
+        const square = x => x * x;
+        console.log("arrow function square of 4:",square(4));
+        
+    </script>
+</body>
+</html>
