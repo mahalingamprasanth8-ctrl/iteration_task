@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array_SearchMethodsAndIterations</title>
+</head>
+<body>
+    <script>
+        const numbers = [4,5,11,6,7,8];
+        const extra = 2;
+        const double=numbers.map((numbers)=> { return numbers * extra });
+    console.log(double);
+
+        const even =numbers.filter((numbers)=> { return numbers % 2 == 0});
+        console.log(even);
+
+        let sum = numbers.reduce(myfunction);
+
+        function myfunction(total,value)
+        {
+            return total+value;
+        }
+        console.log(sum);
+
+        const greater = numbers.find((numbers)=>{return numbers>10});
+
+        console.log(greater);
+
+        const finclude = numbers.includes(20);
+        const tinclude = numbers.includes(11);
+
+        console.log(finclude);
+        console.log(tinclude);
+    </script>
+</body>
+</html>
